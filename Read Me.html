@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Home</title>
+    <style>
+        body{
+            margin-left: 10%;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <h2>The purpose of the application is to build a Rest API to manage movies.</h2>
+
+    <h3>Used technologies</h3>
+    <ul>
+        <li>Programming language: C#</li>
+        <li>Database: SQL Server</li>
+        <li>Frameworks: ASP.NET Web API, Entity Framework</li>
+    </ul>
+    <h3>Local environment setup</h3>
+    <ul>
+        <li>Restore database backup found at Database Backups folder of the project root folder</li>
+        <li>Update connectionString property of the connection string named MovieContext in the web.config file to match your local database</li>
+        <li>Compile the solution</li>
+    </ul>
+
+
+    <h3>How to test the application</h3>
+
+    <ul>
+        <li>First you need a Rest API Client for the test (e.g. Postman)</li>
+        <li>
+            For getting all the movies
+            <ul>
+                <li>URI: <b>/api/movies</b></li>
+                <li>HTTP METHOD: <b>GET</b></li>
+            </ul>
+        </li>
+        <li>
+            For getting a single movie
+            <ul>
+                <li>URI: <b>/api/movies/{movieId}</b></li>
+                <li>HTTP METHOD: <b>GET</b></li>
+            </ul>
+        </li>
+        <li>
+            For posting a new movie
+            <ul>
+                <li>URI: <b>/api/movies</b></li>
+                <li>HTTP METHOD: <b>POST</b></li>
+            </ul>
+        </li>
+        <li>
+            For updating a movie
+            <ul>
+                <li>URI: <b>/api/movies/{movieId}</b></li>
+                <li>HTTP METHOD: <b>PUT</b></li>
+            </ul>
+        </li>
+        <li>
+            For deleting a movie
+            <ul>
+                <li>URI: <b>/api/movies/{movieId}</b></li>
+                <li>HTTP METHOD: <b>DELETE</b></li>
+            </ul>
+        </li>
+        <li>
+            For searching movies in a realise year and ordering by an attribute
+            <ul>
+                <li>URI: <b>/api/movies/search/{year}/[title | director]</b></li>
+                <li>HTTP METHOD: <b>GET</b></li>
+            </ul>
+        </li>
+    </ul>
+    
+   
+</body>
+</html>
